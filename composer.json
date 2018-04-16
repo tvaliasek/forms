@@ -1,7 +1,7 @@
 {
-	"name": "nextras/forms",
+	"name": "tvaliasek/nextras-forms-fork",
 	"type": "library",
-	"description": "Form components for Nette Framework.",
+	"description": "Form components for Nette Framework - only datetime pickers from original nextras.",
 	"keywords": ["nette", "form"],
 	"license": ["MIT"],
 	"authors": [
@@ -27,6 +27,6 @@
 		}
 	},
 	"autoload": {
-		"psr-4": { "Nextras\\Forms\\": "src/" }
+		"psr-4": { "Tvaliasek\\NextrasFormsFork\\": "src/" }
 	}
 }

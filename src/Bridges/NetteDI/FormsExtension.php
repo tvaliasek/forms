@@ -7,13 +7,13 @@
  * @link       https://github.com/nextras/forms
  */
 
-namespace Nextras\Forms\Bridges\NetteDI;
+namespace Tvaliasek\NextrasFormsFork\Bridges\NetteDI;
 
 use Nette\DI\CompilerExtension;
 use Nette\Forms\Container;
 use Nette\PhpGenerator\ClassType;
 use Nette\Utils\ObjectMixin;
-use Nextras\Forms\Controls;
+use Tvaliasek\NextrasFormsFork\Controls;
 
 
 class FormsExtension extends CompilerExtension
@@ -21,9 +21,6 @@ class FormsExtension extends CompilerExtension
 	public function beforeCompile()
 	{
 		parent::beforeCompile();
-		$builder = $this->getContainerBuilder();
-		$builder->getDefinition('nette.latteFactory')
-			->addSetup('?->onCompile[] = function ($engine) { Nextras\Forms\Bridges\Latte\Macros\BS3InputMacros::install($engine->getCompiler()); }', ['@self']);
 	}
 
 
@@ -41,9 +38,6 @@ class FormsExtension extends CompilerExtension
 		});
 		ObjectMixin::setExtensionMethod(Container::class, 'addDateTimePicker', function (Container $container, $name, $label = null) {
 			return $container[$name] = new Controls\DateTimePicker($label);
-		});
-		ObjectMixin::setExtensionMethod(Container::class, 'addTypeahead', function(Container $container, $name, $label = null, $callback = null) {
-			return $container[$name] = new Controls\Typeahead($label, $callback);
 		});
 	}
 }

@@ -7,7 +7,7 @@
  * @link       https://github.com/nextras
  */
 
-namespace Nextras\Forms\Controls;
+namespace Tvaliasek\NextrasFormsFork\Controls;
 
 use Closure;
 use DateTimeInterface;

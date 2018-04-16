@@ -7,14 +7,14 @@
  * @link       https://github.com/nextras/forms
  */
 
-namespace Nextras\Forms;
+namespace Tvaliasek\NextrasFormsFork;
 
 use Nette;
 use Nette\Application\UI\IRenderable;
 use Nette\Application\UI\ISignalReceiver;
 use Nette\ComponentModel\IContainer;
 use Nette\Forms\Controls\BaseControl;
-use Nextras\Forms\Controls\Fragments\TemplateControlTrait;
+use Tvaliasek\NextrasFormsFork\Controls\Fragments\TemplateControlTrait;
 
 
 /**

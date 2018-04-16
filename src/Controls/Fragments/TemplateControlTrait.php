@@ -10,7 +10,7 @@
  * @link       https://github.com/nette/application
  */
 
-namespace Nextras\Forms\Controls\Fragments;
+namespace Tvaliasek\NextrasFormsFork\Controls\Fragments;
 
 use Nette;
 use Nette\Application\UI\IRenderable;
@@ -18,7 +18,7 @@ use Nette\Application\UI\ITemplate;
 use Nette\Application\UI\ITemplateFactory;
 use Nette\Application\UI\Presenter;
 use Nette\Bridges\ApplicationLatte\Template;
-use Nextras\Forms\Bridges\Latte\SnippetBridge;
+use Tvaliasek\NextrasFormsFork\Bridges\Latte\SnippetBridge;
 
 
 /**

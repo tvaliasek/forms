@@ -10,7 +10,7 @@
  * @link       https://github.com/nette/application
  */
 
-namespace Nextras\Forms\Controls\Fragments;
+namespace Tvaliasek\NextrasFormsFork\Controls\Fragments;
 
 use Nette;
 use Nette\Application\UI\BadSignalException;
