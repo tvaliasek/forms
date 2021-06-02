@@ -33,7 +33,7 @@ class FormsExtension extends CompilerExtension
         );
         Container::extensionMethod('addDateTimePicker',
             function ($form, $name, $label = null) {
-                $form[$name] = new Controls\DatePicker($label);
+                $form[$name] = new Controls\DateTimePicker($label);
                 return $form[$name];
             }
         );
